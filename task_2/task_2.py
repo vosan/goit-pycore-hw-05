@@ -16,7 +16,6 @@ def generator_numbers(text: str) -> Generator[float]:
     # Find all numbers in the text
     numbers = re.findall(r'(?<=\s)\d+(?:\.\d+)?(?=\s)', text)
     for num in numbers:
-        # yield each number as a float
         yield float(num)
 
 
